@@ -1,0 +1,136 @@
+/* styles.css */
+
+/* Reset default browser styles */
+body, h1, h2, p, ul, li, footer {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    overflow: hidden; /* Prevent horizontal scrollbar due to large image */
+    background: url('cyberpunk-background.gif') no-repeat center center fixed;
+    background-size: cover; /* Make background image responsive */
+}
+
+.profile-details {
+    position: fixed;
+    top: 50%;
+    right: 20px; /* Changed from left */
+    transform: translateY(-50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+    border-radius: 10px;
+}
+
+.profile-details h2 {
+    color: #00ff00; /* Neon green */
+    margin-bottom: 10px;
+}
+
+.profile-details p {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.github-login {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00ff00; /* Neon green */
+    color: #000; /* Black text */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.github-login:hover {
+    background-color: #00cc00; /* Darker green on hover */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ff00ff; /* Neon pink */
+    text-shadow: 0 0 10px #ff00ff; /* Neon glow */
+    position: relative;
+    animation: glitch 2s infinite;
+}
+
+@keyframes glitch {
+    2%, 64% {
+        transform: translate(2px, -1px) skewX(15deg);
+    }
+    4%, 60% {
+        transform: translate(-1px, 0px) skewX(-10deg);
+    }
+    62% {
+        transform: translate(2px, -1px) skewX(15deg);
+    }
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #00ff00; /* Neon green */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+}
+
+section a {
+    color: #00ff00; /* Neon green */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #fff; /* White text */
+    font-size: 0.8em;
+}
+
+.footer-name {
+    text-shadow: 0 0 10px transparent; /* Start with transparent shadow */
+    transition: text-shadow 0.5s; /* Add transition for smooth effect */
+}
+
+.footer-name:hover {
+    text-shadow: 0 0 30px #ff0000; /* Apply red glow effect on hover */
+}
+
+footer a {
+    color: #00ff00; /* Neon green */
+}
+
+footer p {
+    margin-top: 10px;
+}
+
